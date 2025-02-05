@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def cadastro(request):
-    return HttpResponse('teste')
+    return render(request, 'cadastro.html')
+
+def logar(request):
+    return HttpResponse('login efetuado com sucesso!!!')
